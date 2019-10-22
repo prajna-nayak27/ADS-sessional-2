@@ -17,7 +17,7 @@ struct _airline_
 struct  _heap_
 {
 	uint32_t	size;
-	struct air	data;
+	struct air	data[HEAP_MAX_SIZE];
 };
 
 Heap 		heap_new(int32_t data[], uint32_t len);
